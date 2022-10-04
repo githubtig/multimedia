@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+		<title>AUXILIAR HTML CSS</title>
+		<style>
+			table {
+				margin: 0 0 26px;
+				border-collapse: collapse;
+				border-spacing: 0;
+				width: 100%;
+				border: 1px solid #ddd;
+				overflow-x: auto;
+				display: block;
+			}
+			tbody {
+				display: table-row-group;
+				vertical-align: middle;
+				border-color: inherit;
+			}
+			table tr {
+				border-bottom: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Como criar um site do zero com HTML e CSS em 5 minutos</h1>
+		</header>
+		<h2>O que é HTML</h2>
+		<p>HTML é uma linguagem de marcação de dados que serve para montar páginas de internet. Através dela é possível organizar os elementos e apresentar conteúdo no navegador com textos, imagens, vídeos e som.</p>
+		<p>E como programar em HTML? É possível? Não é possível, pois é uma linguagem de marcação, usada apenas para definir os elementos da página e a organização deles.</p>
+		<p>Para criar uma página HTML, é necessário um editor de textos qualquer, tipo o bloco de notas do Windows, mas é interessante
+		usar um editor de códigos HTML, como o VisualCode ou o Sublime Text, por exemplo.</p>
+		<p>Iniciamos com o esqueleto básico de qualquer página web com HTML. É só copiar e colocar em um novo ficheiro.</p>
+		<pre>
+			 <code><span>&lt;!DOCTYPE html&gt;</span>
+				 <span>&lt;html&gt;</span>
+					<span>&lt;head&gt;</span>
+						<span>&lt;meta charset="UTF-8"&gt;</span>
+						<span>&lt;title&gt;Título da página&lt;/title&gt;</span>
+					<span>&lt;/head&gt;</span>
+					<span>&lt;body&gt;</span>
+						<span>&lt;h1&gt;Título visível&lt;/h1&gt;</span>
+						<span>&lt;p&gt;Parágrafo&lt;/p&gt;</span>
+					<span>&lt;/body&gt;</span>
+				 <span>&lt;/html&gt;</span>
+			</code>
+		</pre>
+		<p>Guarda o ficheiro com o nome index e a extensão .html, depois abre no navegador. 
+		<p>Fácil até aquí, certo? Na linguagem HTML tudo funciona com tags e deves usar a tag certa para a função certa. Por exemplo, se
+		quiseres fazer um título, coloca dentro da tag body isto <code>&lt;h1&gt;Meu título&lt;/h1&gt;</code>, e se quiseres fazer um texto corrido,
+		então coloca um parágrafo com <code>&lt;p&gt;Meu parágrafo&lt;/p&gt;</code>.</p>
+		<h2>O que é CSS</h2>
+		<p>A linguagem CSS é utilizada para fazer a formatação visual dos elementos HTML. É possível criar layouts, aplicar cores, formatar
+		imagens, criar regras para acesso mobile, entre várias outras funcionalidades.</p>
+		<p>Para ver na prática, coloca o seguinte código dentro da tag <code>&lt;head&gt;</code> do teu codigo.</p>
+		<pre>
+			<code>
+				<span>&lt;style&gt;</span>
+				<span>h1{color:red;border:1px solid #f5f5f5}</span>
+				<span>p{font-size:14px;font-style:italic}</span>
+			<span>&lt;/style&gt;</span>
+			</code>
+		</pre>
+		<p>Depois guarda o ficheiro e abre no navegador para ver o resultado.</p>
+		<p>Agora é contigo!</p>
+		<p><strong>Nunca te esqueças que HTML é para organizar dados e elementos e CSS para fazer a formatação visual.<strong></p>
+		</br></br>
+		</hr>
+		<h1>TAGS HTML</h1>
+		<p>
+			<table>
+				<tbody><tr>
+					<th style="width:25%">Tag</th>
+					<th>Descrição</th>
+					</tr>
+					<tr>
+					<td>&lt;!--...--&gt;</td>
+					<td>Define um comentário, ou seja, algo que não será renderizado na tela</td>
+					</tr>
+					<tr>
+					<td>&lt;!DOCTYPE&gt;&nbsp;</td>
+					<td>Define o tipo de documento HTML</td>
+					</tr>
+					<tr>
+					<td>&lt;a&gt;</td>
+					<td>Define um link</td>
+					</tr>
+					<tr>
+					<td>&lt;abbr&gt;</td>
+					<td>Define uma abreviação ou um acrônimo</td>
+					</tr>
+					<tr>
+					<td>&lt;acronym&gt;</td>
+					<td>Tag não suportada em HTML5. Use a tag &lt;abbr&gt;.<br>Define um acrônimo</td>
+					</tr>
+					<tr>
+					<td>&lt;address&gt;</td>
+					<td>Define informações de contato para o autor da página HTML</td>
+					</tr>
+					<tr>
+					<td>&lt;applet&gt;</td>
+					<td>Tag não suportada em HTML5. Use &lt;embed&gt; ou &lt;object&gt; no lugar.<br>Define uma funcionalide embutida</td>
+					</tr>
+					<tr>
+					<td>&lt;area&gt;</td>
+					<td>Define uma área dentro de um mapa de imagem</td>
+					</tr>
+					<tr>
+					<td>&lt;article&gt;</td>
+					<td>Define um artigo</td>
+					</tr>
+					<tr>
+					<td>&lt;aside&gt;</td>
+					<td>Define um conteúdo complementar, além do conteúdo da página. Ex: sidebar</td>
+					</tr>
+					<tr>
+					<td>&lt;audio&gt;</td>
+					<td>Define um conteúdo em áudio</td>
+					</tr>
+					<tr>
+					<td>&lt;b&gt;</td>
+					<td>Define texto em negrito</td>
+					</tr>
+					<tr>
+					<td>&lt;base&gt;</td>
+					<td>Especifica a URL base para todos os URLs relativos em uma página HTML</td>
+					</tr>
+					<tr>
+					<td>&lt;basefont&gt;</td>
+					<td>Tag não suportada em HTML5. Use CSS no lugar.<br>Especifica uma cor, tamanho e fonte padrão para todo o texto em uma página</td>
+					</tr>
+					<tr>
+					<td>&lt;bdi&gt;</td>
+					<td>Isola uma parte do texto que pode ser formatada em uma direção diferente</td>
+					</tr>
+					<tr>
+					<td>&lt;bdo&gt;</td>
+					<td>Substitui a direção atual do texto</td>
+					</tr>
+					<tr>
+					<td>&lt;big&gt;</td>
+					<td>Tag não suportada em HTML5. Use CSS no lugar.<br>Define um texto maior</td>
+					</tr>
+					<tr>
+					<td>&lt;blockquote&gt;</td>
+					<td>Define um texto que é citação de outra fonte</td>
+					</tr>
+					<tr>
+					<td>&lt;body&gt;</td>
+					<td>Define o corpo da página</td>
+					</tr>
+					<tr>
+					<td>&lt;br&gt;</td>
+					<td>Define uma simples quebra de linha</td>
+					</tr>
+					<tr>
+					<td>&lt;button&gt;</td>
+					<td>Define um botão</td>
+					</tr>
+					<tr>
+					<td>&lt;canvas&gt;</td>
+					<td>Usado para desenhar gráficos via script (geralmente JavaScript)</td>
+					</tr>
+					<tr>
+					<td>&lt;caption&gt;</td>
+					<td>Define uma legenda de tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;center&gt;</td>
+					<td>Tag não suportada em HTML5. Use CSS no lugar.<br>Define um texto centralizado</td>
+					</tr>
+					<tr>
+					<td>&lt;cite&gt;</td>
+					<td>Define o título de um trabalho</td>
+					</tr>
+					<tr>
+					<td>&lt;code&gt;</td>
+					<td>Define um pedaço de código de computador</td>
+					</tr>
+					<tr>
+					<td>&lt;col&gt;</td>
+					<td>Especifica as propriedades da coluna dentro de um elemento &lt;colgroup&gt;</td>
+					</tr>
+					<tr>
+					<td>&lt;colgroup&gt;</td>
+					<td>Especifica um grupo de uma ou mais colunas em uma tabela para formatação</td>
+					</tr>
+					<tr>
+					<td>&lt;data&gt;</td>
+					<td>Vincula o conteúdo fornecido a uma leitura legível por máquina</td>
+					</tr>
+					<tr>
+					<td>&lt;datalist&gt;</td>
+					<td>Especifica uma lista de opções predefinidas para controles de entrada</td>
+					</tr>
+					<tr>
+					<td>&lt;dd&gt;</td>
+					<td>Define um valor de um termo em uma lista de descrição</td>
+					</tr>
+					<tr>
+					<td>&lt;del&gt;</td>
+					<td>Define o texto que foi excluído de um documento</td>
+					</tr>
+					<tr>
+					<td>&lt;details&gt;</td>
+					<td>Define detalhes adicionais que o usuário pode visualizar ou ocultar</td>
+					</tr>
+					<tr>
+					<td>&lt;dfn&gt;</td>
+					<td>Representa a instância de definição de um termo</td>
+					</tr>
+					<tr>
+					<td>&lt;dialog&gt;</td>
+					<td>Define uma caixa de diálogo ou janela</td>
+					</tr>
+					<tr>
+					<td>&lt;dir&gt;</td>
+					<td>Tag não suportada em HTML5. Use &lt;ul&gt; no lugar.<br>Define uma lista de diretórios</td>
+					</tr>
+					<tr>
+					<td>&lt;div&gt;</td>
+					<td>Define um bloco de conteúdo na página</td>
+					</tr>
+					<tr>
+					<td>&lt;dl&gt;</td>
+					<td>Define uma lista de descrição</td>
+					</tr>
+					<tr>
+					<td>&lt;dt&gt;</td>
+					<td>Define um termo ou nome em uma lista de descrição</td>
+					</tr>
+					<tr>
+					<td>&lt;em&gt;</td>
+					<td>Define texto enfatizado</td>
+					</tr>
+					<tr>
+					<td>&lt;embed&gt;</td>
+					<td>Define um contêiner para um aplicativo externo (não HTML)</td>
+					</tr>
+					<tr>
+					<td>&lt;fieldset&gt;</td>
+					<td>Agrupa elementos relacionados de um formulário</td>
+					</tr>
+					<tr>
+					<td>&lt;figcaption&gt;</td>
+					<td>Define uma legenda para uma tag &lt;figure&gt;</td>
+					</tr>
+					<tr>
+					<td>&lt;figure&gt;</td>
+					<td>Define uma área para inserir imagem</td>
+					</tr>
+					<tr>
+					<td>&lt;font&gt;</td>
+					<td>Tag não suportada em HTML5. Use CSS no lugar.<br>Define a fonte, a cor e o tamanho do texto</td>
+					</tr>
+					<tr>
+					<td>&lt;footer&gt;</td>
+					<td>Define um rodapé para a página HTML ou seção</td>
+					</tr>
+					<tr>
+					<td>&lt;form&gt;</td>
+					<td>Define um formulário</td>
+					</tr>
+					<tr>
+					<td>&lt;frame&gt;</td>
+					<td>Tag não suportada em HTML5.<br>Define um quadro independente dentro de um conjunto de quadros</td>
+					</tr>
+					<tr>
+					<td>&lt;frameset&gt;</td>
+					<td>Tag não suportada em HTML5.<br>Define um conjunto de quadros</td>
+					</tr>
+					<tr>
+					<td>&lt;h1&gt; até &lt;h6&gt;</td>
+					<td>Define os títulos do documento</td>
+					</tr>
+					<tr>
+					<td>&lt;head&gt;</td>
+					<td>Define informações sobre o documento e recursos auxiliares</td>
+					</tr>
+					<tr>
+					<td>&lt;header&gt;</td>
+					<td>Define um cabeçalho visível para a página ou seção.</td>
+					</tr>
+					<tr>
+					<td>&lt;hr&gt;</td>
+					<td>Define uma mudança temática no conteúdo (linha divisória)</td>
+					</tr>
+					<tr>
+					<td>&lt;html&gt;</td>
+					<td>Define a raiz de um documento HTML</td>
+					</tr>
+					<tr>
+					<td>&lt;i&gt;</td>
+					<td>Define uma parte do texto em uma voz ou humor alternativo</td>
+					</tr>
+					<tr>
+					<td>&lt;iframe&gt;</td>
+					<td>Define um quadro independente na página (Ex: Vídeo YouTube)</td>
+					</tr>
+					<tr>
+					<td>&lt;img&gt;</td>
+					<td>Define uma imagem</td>
+					</tr>
+					<tr>
+					<td>&lt;input&gt;</td>
+					<td>Define um elemento de entrada de dados</td>
+					</tr>
+					<tr>
+					<td>&lt;ins&gt;</td>
+					<td>Define um texto que foi inserido em um documento</td>
+					</tr>
+					<tr>
+					<td>&lt;kbd&gt;</td>
+					<td>Define a entrada do teclado</td>
+					</tr>
+					<tr>
+					<td>&lt;label&gt;</td>
+					<td>Define um rótulo para um elemento &lt;input&gt;</td>
+					</tr>
+					<tr>
+					<td>&lt;legend&gt;</td>
+					<td>Define uma legenda para um elemento &lt;fieldset&gt;</td>
+					</tr>
+					<tr>
+					<td>&lt;li&gt;</td>
+					<td>Define um item de lista</td>
+					</tr>
+					<tr>
+					<td>&lt;link&gt;</td>
+					<td>Define um relação entre um documento e um recurso externo (Ex: usado para vincular estilos CSS)</td>
+					</tr>
+					<tr>
+					<td>&lt;main&gt;</td>
+					<td>Especifica o conteúdo principal de um documento</td>
+					</tr>
+					<tr>
+					<td>&lt;map&gt;</td>
+					<td>Define um mapa de imagem do lado do cliente (navegador)</td>
+					</tr>
+					<tr>
+					<td>&lt;mark&gt;</td>
+					<td>Define texto marcado ou realçado</td>
+					</tr>
+					<tr>
+					<td>&lt;meta&gt;</td>
+					<td>Define metadados sobre um documento HTML inseridos na tag &lt;head&gt;</td>
+					</tr>
+					<tr>
+					<td>&lt;meter&gt;</td>
+					<td>Define uma medida escalar dentro de um intervalo conhecido (um medidor)</td>
+					</tr>
+					<tr>
+					<td>&lt;nav&gt;</td>
+					<td>Define uma estrutura de links para navegação</td>
+					</tr>
+					<tr>
+					<td>&lt;noframes&gt;</td>
+					<td>Tag não suportada em HTML5.<br>Define um conteúdo alternativo para usuários que não suportam quadros</td>
+					</tr>
+					<tr>
+					<td>&lt;noscript&gt;</td>
+					<td>Define um conteúdo alternativo para usuários que não suportam scripts no navegador</td>
+					</tr>
+					<tr>
+					<td>&lt;object&gt;</td>
+					<td>Define um objeto incorporado</td>
+					</tr>
+					<tr>
+					<td>&lt;ol&gt;</td>
+					<td>Define uma lista ordenada</td>
+					</tr>
+					<tr>
+					<td>&lt;optgroup&gt;</td>
+					<td>Define um grupo de opções relacionadas em uma lista suspensa</td>
+					</tr>
+					<tr>
+					<td>&lt;option&gt;</td>
+					<td>Define uma opção em uma lista suspensa</td>
+					</tr>
+					<tr>
+					<td>&lt;output&gt;</td>
+					<td>Define o resultado de um cálculo</td>
+					</tr>
+					<tr>
+					<td>&lt;p&gt;</td>
+					<td>Define um parágrafo</td>
+					</tr>
+					<tr>
+					<td>&lt;param&gt;</td>
+					<td>Define um parâmetro para um objeto</td>
+					</tr>
+					<tr>
+					<td>&lt;picture&gt;</td>
+					<td>Define um contêiner para vários recursos de imagem</td>
+					</tr>
+					<tr>
+					<td>&lt;pre&gt;</td>
+					<td>Define o texto pré-formatado</td>
+					</tr>
+					<tr>
+					<td>&lt;progress&gt;</td>
+					<td>Representa o progresso de uma tarefa
+					</td>
+					</tr>
+					<tr>
+					<td>&lt;q&gt;</td>
+					<td>Define uma cotação curta
+					</td>
+					</tr>
+					<tr>
+					<td>&lt;rp&gt;</td>
+					<td>Define o que mostrar em navegadores que não suportam anotações de ruby</td>
+					</tr>
+					<tr>
+					<td>&lt;rt&gt;</td>
+					<td>Define uma explicação / pronúncia de caracteres (para tipografia do leste asiático)</td>
+					</tr>
+					<tr>
+					<td>&lt;ruby&gt;</td>
+					<td>Define uma anotação rubi (para tipografia do leste asiático)</td>
+					</tr>
+					<tr>
+					<td>&lt;s&gt;</td>
+					<td>Define o texto que não está mais correto
+					</td>
+					</tr>
+					<tr>
+					<td>&lt;samp&gt;</td>
+					<td>Define a saída de amostra de um programa de computador
+					</td>
+					</tr>
+					<tr>
+					<td>&lt;script&gt;</td>
+					<td>Define um código JavaScript</td>
+					</tr>
+					<tr>
+					<td>&lt;section&gt;</td>
+					<td>Define uma seção em um documento</td>
+					</tr>
+					<tr>
+					<td>&lt;select&gt;</td>
+					<td>Define uma lista suspensa</td>
+					</tr>
+					<tr>
+					<td>&lt;small&gt;</td>
+					<td>Define texto menor</td>
+					</tr>
+					<tr>
+					<td>&lt;source&gt;</td>
+					<td>Define vários recursos de mídia (&lt;video&gt; e &lt;audio&gt;)</td>
+					</tr>
+					<tr>
+					<td>&lt;span&gt;</td>
+					<td>Define um bloco de linha para texto curto</td>
+					</tr>
+					<tr>
+					<td>&lt;strike&gt;</td>
+					<td>Tag não suportada em HTML5. Use &lt;del&gt; ou &lt;s&gt; no lugar.<br>Define o texto tachado</td>
+					</tr>
+					<tr>
+					<td>&lt;strong&gt;</td>
+					<td>Define um texto importante em negrito</td>
+					</tr>
+					<tr>
+					<td>&lt;style&gt;</td>
+					<td>Define informações de estilo CSS para um documento HTML</td>
+					</tr>
+					<tr>
+					<td>&lt;sub&gt;</td>
+					<td>Define um texto subscrito</td>
+					</tr>
+					<tr>
+					<td>&lt;summary&gt;</td>
+					<td>Define um título visível para um elemento &lt;details&gt;</td>
+					</tr>
+					<tr>
+					<td>&lt;sup&gt;</td>
+					<td>Define um texto sobrescrito</td>
+					</tr>
+					<tr>
+					<td>&lt;svg&gt;</td>
+					<td>Define um contêiner para gráficos SVG</td>
+					</tr>
+					<tr>
+					<td>&lt;table&gt;</td>
+					<td>Define uma tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;tbody&gt;</td>
+					<td>Agrupa o conteúdo do corpo em uma tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;td&gt;</td>
+					<td>Define uma célula de tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;template&gt;</td>
+					<td>Define um template</td>
+					</tr>
+					<tr>
+					<td>&lt;textarea&gt;</td>
+					<td>Define uma área para entrada de texto longo em formulário</td>
+					</tr>
+					<tr>
+					<td>&lt;tfoot&gt;</td>
+					<td>Agrupa o conteúdo do rodapé em uma tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;th&gt;</td>
+					<td>Define uma célula de cabeçalho em uma tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;thead&gt;</td>
+					<td>Agrupa o conteúdo do cabeçalho em uma tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;time&gt;</td>
+					<td>Define um elemento data ou hora</td>
+					</tr>
+					<tr>
+					<td>&lt;title&gt;</td>
+					<td>Define o título do documento</td>
+					</tr>
+					<tr>
+					<td>&lt;tr&gt;</td>
+					<td>Define uma linha de tabela</td>
+					</tr>
+					<tr>
+					<td>&lt;track&gt;</td>
+					<td>Define faixas de texto para elementos de mídia (&lt;video&gt; and &lt;audio&gt;)</td>
+					</tr>
+					<tr>
+					<td>&lt;tt&gt;</td>
+					<td>Tag não suportada em HTML5. Use CSS no lugar.<br>Define o texto do teletipo</td>
+					</tr>
+					<tr>
+					<td>&lt;u&gt;</td>
+					<td>Define o texto sublinhado</td>
+					</tr>
+					<tr>
+					<td>&lt;ul&gt;</td>
+					<td>Define uma lista não ordenada</td>
+					</tr>
+					<tr>
+					<td>&lt;var&gt;</td>
+					<td>Define uma variável</td>
+					</tr>
+					<tr>
+					<td>&lt;video&gt;</td>
+					<td>Define um vídeo</td>
+					</tr>
+					<tr>
+					<td>&lt;wbr&gt;</td>
+					<td>Define uma possível quebra de linha</td>
+					</tr>
+				</tbody>
+			</table>
+		</p>
+
+		<h1>SELETORES CSS</h1>
+		<p>
+			<table>
+				<tbody>
+					<tr>
+					<th>Seletor / Exemplo</th>
+					<th>Descrição</th>
+					</tr>
+					<tr>
+					<td>.intro</td>
+					<td>Seleciona todos os elementos com class="intro"</td>
+					</tr>
+					<tr>
+					<td>#primeironome</td>
+					<td>Seleciona o elemento com id="primeironome"</td>
+					</tr>
+					<tr>
+					<td>*</td>
+					<td>Seleciona todos os elementos</td>
+					</tr>
+					<tr>
+					<td>p</td>
+					<td>Seleciona todos os elementos &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>div, p</td>
+					<td>Seleciona todos os elementos &lt;div&gt; e todos os elementos &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>div p</td>
+					<td>Seleciona todos os elementos &lt;p&gt; dentro de elementos &lt;div&gt;</td>
+					</tr>
+					<tr>
+					<td>div &gt; p</td>
+					<td>Seleciona todos os elementos &lt;p&gt; onde o pai é um elemento &lt;div&gt;</td>
+					</tr>
+					<tr>
+					<td>div + p</td>
+					<td>Seleciona todos os elementos &lt;p&gt; que são colocados imediatamente após elementos &lt;div&gt;</td>
+					</tr>
+					<tr>
+					<td>p ~ ul</td>
+					<td>Seleciona todos os elementos &lt;ul&gt; precedidos por um elemento &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>[target]</td>
+					<td>Seleciona todos os elementos com o atributo target</td>
+					</tr>
+					<tr>
+					<td>[target=_blank]</td>
+					<td>Seleciona todos os elementos com o atributo target="_blank"</td>
+					</tr>
+					<tr>
+					<td>[title~=flor]</td>
+					<td>Seleciona todos os elementos com o atributo title contendo a palavra "flor"</td>
+					</tr>
+					<tr>
+					<td>[lang|=pt]</td>
+					<td>Seleciona todos os elementos com o valor do atributo lang começando com "pt"</td>
+					</tr>
+					<tr>
+					<td>a[href^="https"]</td>
+					<td>Seleciona todo elemento &lt;a&gt; com o valor do atributo href começando com "https"</td>
+					</tr>
+					<tr>
+					<td>a[href$=".pdf"]</td>
+					<td>Seleciona todo elemento &lt;a&gt; com valor do atributo href terminando com ".pdf"</td>
+					</tr>
+					<tr>
+					<td>a[href*="ayltoninacio"]</td>
+					<td>Seleciona todo elemento &lt;a&gt; com o valor do atributo href contendo a string "ayltoninacio"</td>
+					</tr>
+					<tr>
+					<td>a:active</td>
+					<td>Seleciona todos os links ativos</td>
+					</tr>
+					<tr>
+					<td>p::after</td>
+					<td>Insere algo após o conteúdo de cada elemento &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>p::before</td>
+					<td>Insere algo antes do conteúdo de cada elemento &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>input:checked</td>
+					<td>Seleciona todo elemento &lt;input&gt; com checked</td>
+					</tr>
+					<tr>
+					<td>input:default</td>
+					<td>Seleciona o elemento &lt;input&gt; padrão</td>
+					</tr>
+					<tr>
+					<td>input:disabled</td>
+					<td>Seleciona todo elemento &lt;input&gt; com disabled</td>
+					</tr>
+					<tr>
+					<td>p:empty</td>
+					<td>Seleciona todos os elementos &lt;p&gt; que não tem filhos (incluindo nós de texto)</td>
+					</tr>
+					<tr>
+					<td>input:enabled</td>
+					<td>Seleciona todo elemento &lt;input&gt; ativo</td>
+					</tr>
+					<tr>
+					<td>p:first-child</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o primeiro filho de seu pai</td>
+					</tr>
+					<tr>
+					<td>p::first-letter</td>
+					<td>Seleciona a primeira letra de todos os elementos &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>p::first-line</td>
+					<td>Seleciona a primeira linha de todos os elementos &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>p:first-of-type</td>
+					<td>Seleciona todo o elemento &lt;p&gt; que é o primeiro elemento &lt;p&gt; de seu pai</td>
+					</tr>
+					<tr>
+					<td>input:focus</td>
+					<td>Seleciona o elemento input que tem foco</td>
+					</tr>
+					<tr>
+					<td>a:hover</td>
+					<td>Seleciona o link com o mouse sobre ele</td>
+					</tr>
+					<tr>
+					<td>input:in-range</td>
+					<td>Seleciona elementos input com um valor dentro de um intervalo especificado</td>
+					</tr>
+					<tr>
+					<td>input:indeterminate</td>
+					<td>Seleciona elementos input que estão em um estado indeterminado</td>
+					</tr>
+					<tr>
+					<td>input:invalid</td>
+					<td>Seleciona todos os elementos input com um valor inválido</td>
+					</tr>
+					<tr>
+					<td>p:lang(it)</td>
+					<td>Seleciona todos os elementos &lt;p&gt; com um atributo lang igual a "it" (italiano)</td>
+					</tr>
+					<tr>
+					<td>p:last-child</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o último filho de seu pai</td>
+					</tr>
+					<tr>
+					<td>p:last-of-type</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o último elemento &lt;p&gt; de seu pai</td>
+					</tr>
+					<tr>
+					<td>a:link</td>
+					<td>Seleciona todos os links que não foram visitados</td>
+					</tr>
+					<tr>
+					<td>:not(p)</td>
+					<td>Seleciona todos os elementos que não são elementos &lt;p&gt;</td>
+					</tr>
+					<tr>
+					<td>p:nth-child(2)</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o segundo filho de seu pai</td>
+					</tr>
+					<tr>
+					<td>p:nth-last-child(2)</td>
+					<td>Seleciona elemento &lt;p&gt; que é o segundo filho de seu pai, contando a partir do último filho</td>
+					</tr>
+					<tr>
+					<td>p:nth-last-of-type(2)</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o segundo elemento &lt;p&gt; de seu pai, contando a partir do último filho</td>
+					</tr>
+					<tr>
+					<td>p:nth-of-type(2)</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o segundo elemento &lt;p&gt; de seu pai</td>
+					</tr>
+					<tr>
+					<td>p:only-of-type</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o único elemento &lt;p&gt; de seu pai</td>
+					</tr>
+					<tr>
+					<td>p:only-child</td>
+					<td>Seleciona todo elemento &lt;p&gt; que é o único filho de seu pai</td>
+					</tr>
+					<tr>
+					<td>input:optional</td>
+					<td>Seleciona elementos input sem atributo "required"</td>
+					</tr>
+					<tr>
+					<td>input:out-of-range</td>
+					<td>Seleciona elementos input com um valor fora de um intervalo especificado</td>
+					</tr>
+					<tr>
+					<td>input::placeholder</td>
+					<td>Seleciona elementos input com texto placeholder</td>
+					</tr>
+					<tr>
+					<td>input:read-only</td>
+					<td>Seleciona elementos input com o atributo "readonly" especificado</td>
+					</tr>
+					<tr>
+					<td>input:read-write</td>
+					<td>Seleciona elementos input com o atributo "readonly" não especificado</td>
+					</tr>
+					<tr>
+					<td>input:required</td>
+					<td>Seleciona elementos input com o atributo "required" especificado</td>
+					</tr>
+					<tr>
+					<td>:root</td>
+					<td>Seleciona o elemento raiz do documento</td>
+					</tr>
+					<tr>
+					<td>::selection</td>
+					<td>Seleciona a parte de um elemento que é selecionado por um usuário</td>
+					</tr>
+					<tr>
+					<td>#news:target </td>
+					<td>Seleciona o elemento atual #news ativo (clicado em um URL contendo esse nome de âncora)</td>
+					</tr>
+					<tr>
+					<td>input:valid</td>
+					<td>Seleciona todos os elementos input com um valor válido</td>
+					</tr>
+					<tr>
+					<td>a:visited</td>
+					<td>Seleciona todos os links visitados</td>
+					</tr>
+				</tbody>
+			</table>
+		</p>
+	</body>
+</html>
